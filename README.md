@@ -1,7 +1,7 @@
 # AlgorithmStudy
 백준 :green_heart:플래티넘:green_heart:찍는 그날까지...
 
-  [![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=sooj17)](https://solved.ac/sooj17)       [![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=skive)](https://solved.ac/skive)<br/>
+  [![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=sooj17)](https://solved.ac/sooj17) [![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=skive)](https://solved.ac/skive)<br/>
 
 
 # :open_file_folder:DOCS

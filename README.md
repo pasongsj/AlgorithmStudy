@@ -1,6 +1,9 @@
 # AlgorithmStudy
 백준 :green_heart:플래티넘:green_heart:찍는 그날까지...
 
+  [![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=sooj17)](https://solved.ac/sooj17)       [![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=skive)](https://solved.ac/skive)<br/>
+
+
 # :open_file_folder:DOCS
 :sparkles: [진행 상황 한눈에 보기](https://github.com/users/pasongsj/projects/4/views/1)
 

@@ -13,11 +13,10 @@
 
 | 주차 | 기간 | 상태 | 완료율 |
 |------|------|------|-------|
-| [알고리즘 1주차](https://github.com/pasongsj/AlgorithmStudy/milestone/1?state=closed) | 2024.08.23 ~ 2024.08.25 | 완료 | 100.00% |
+| [알고리즘 1주차](https://github.com/pasongsj/AlgorithmStudy/milestone/1?state=closed) | 24.08.23 ~ 24.08.25 | 완료 | 100.00% |
 | [알고리즘 2주차](https://github.com/pasongsj/AlgorithmStudy/milestone/2?state=closed) | 24.08.26 ~ 24.09.01 | 진행 중 | 88.89% |
 | [알고리즘 3주차](https://github.com/pasongsj/AlgorithmStudy/milestone/3?state=closed) | 24.09.02 ~24.09.08 | 진행 중 | 10.00% |
 | [알고리즘 4주차](https://github.com/pasongsj/AlgorithmStudy/milestone/4?state=closed) | 24.09.09 ~ 24.09.15 | 진행 중 | 0.00% |
-
 &nbsp;
 &nbsp;
 # :white_check_mark:문제 등록

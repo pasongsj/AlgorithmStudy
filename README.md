@@ -13,15 +13,10 @@
 
 | 주차 | 기간 | 상태 | 완료율 |
 |------|------|------|-------|
-| [알고리즘 1주차](https://github.com/pasongsj/AlgorithmStudy/milestone/1?state=closed) | 1주차 알고리즘 풀기 | 완료 | 100.00% |
-| [알고리즘 2주차](https://github.com/pasongsj/AlgorithmStudy/milestone/2?state=closed) | 알고리즘 문제 풀이 24.08.26 ~24.09.01 | 진행 중 | 88.89% |
-| [알고리즘 3주차](https://github.com/pasongsj/AlgorithmStudy/milestone/3?state=closed) | 알고리즘 문제 풀이 24.09.02~24.09.08 | 진행 중 | 10.00% |
-| [알고리즘 4주차](https://github.com/pasongsj/AlgorithmStudy/milestone/4?state=closed) | 알고리즘 문제 풀이 24.09.09~24.09.15 | 진행 중 | 0.00% |
-
-
-
-
-&nbsp;
+| [알고리즘 1주차](https://github.com/pasongsj/AlgorithmStudy/milestone/1?state=closed) | 2024.08.23 ~ 2024.08.25 | 완료 | 100.00% |
+| [알고리즘 2주차](https://github.com/pasongsj/AlgorithmStudy/milestone/2?state=closed) | 24.08.26 ~ 24.09.01 | 진행 중 | 88.89% |
+| [알고리즘 3주차](https://github.com/pasongsj/AlgorithmStudy/milestone/3?state=closed) | 24.09.02 ~24.09.08 | 진행 중 | 10.00% |
+| [알고리즘 4주차](https://github.com/pasongsj/AlgorithmStudy/milestone/4?state=closed) | 24.09.09 ~ 24.09.15 | 진행 중 | 0.00% |
 # :white_check_mark:문제 등록
 1. 이슈를 만든다.
 2. ${\textsf{\color{Magenta}[날짜] 플랫폼 문제번호 문제이름}}$을 제목으로 한다.

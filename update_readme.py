@@ -57,15 +57,23 @@ with open("README.md", "r", encoding="utf-8") as file:
 # 새로운 README 내용 작성
 new_content = []
 in_milestone_section = False
+milestone_section_found = False
+
 for line in readme_content:
     if line.strip() == "### 주차별 진행률":
         in_milestone_section = True
+        milestone_section_found = True
         new_content.append("### 주차별 진행률\n\n")
         new_content.append(table)  # 표를 추가
     elif in_milestone_section and line.startswith("## "):  # 다음 섹션으로 넘어가면 종료
         in_milestone_section = False
     if not in_milestone_section:
         new_content.append(line)
+
+# 마일스톤 섹션이 없을 경우 추가
+if not milestone_section_found:
+    new_content.append("\n## 프로젝트 마일스톤 진행 상황\n\n")
+    new_content.append(table)
 
 # 업데이트된 README 내용 확인
 print("Updated README Content:\n", ''.join(new_content))

@@ -1,0 +1,35 @@
+name: Update README with Milestone Progress
+
+on:
+  workflow_dispatch:  # 수동 트리거를 위한 설정
+
+permissions:  # GITHUB_TOKEN의 권한을 설정
+  contents: write  # 리포지토리 콘텐츠에 쓰기 권한 부여
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository  # 리포지토리 체크아웃
+        uses: actions/checkout@v3  # 최신 버전 사용
+
+      - name: Set up Python  # Python 환경 설정
+        uses: actions/setup-python@v4  # 최신 버전 사용
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies  # Python 의존성 설치
+        run: pip install requests
+
+      - name: Run script to update README  # 스크립트 실행
+        run: python update_readme.py
+
+      - name: Commit and push changes  # 변경 사항 커밋 및 푸시
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GITHUB_TOKEN 사용
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update README with milestone progress" || true  # 오류를 무시
+          git push

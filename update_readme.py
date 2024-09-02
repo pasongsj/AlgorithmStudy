@@ -65,10 +65,15 @@ for line in readme_content:
         milestone_section_found = True
         new_content.append("### 주차별 진행률\n\n")
         new_content.append(table)  # 표를 추가
-    elif in_milestone_section and line.startswith("## "):  # 다음 섹션으로 넘어가면 종료
-        in_milestone_section = False
-    if not in_milestone_section:
-        new_content.append(line)
+        continue  # 다음 줄로 이동하여 테이블만 추가
+    if in_milestone_section:
+        # 새로운 섹션이 시작되면 마일스톤 섹션 끝으로 간주
+        if line.startswith("## "):
+            in_milestone_section = False
+            new_content.append(line)  # 새로운 섹션 제목 추가
+        # 마일스톤 섹션이 끝나기 전까지는 아무것도 추가하지 않음
+        continue
+    new_content.append(line)  # 기존 내용을 유지
 
 # 마일스톤 섹션이 없을 경우 추가
 if not milestone_section_found:

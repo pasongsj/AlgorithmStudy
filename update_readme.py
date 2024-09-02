@@ -68,7 +68,7 @@ for line in readme_content:
         continue  # 다음 줄로 이동하여 테이블만 추가
     if in_milestone_section:
         # 새로운 섹션이 시작되면 마일스톤 섹션 끝으로 간주
-        if line.startswith("# "):
+        if line.startswith("&nbsp;"):
             in_milestone_section = False
             new_content.append(line)  # 새로운 섹션 제목 추가
         # 마일스톤 섹션이 끝나기 전까지는 아무것도 추가하지 않음

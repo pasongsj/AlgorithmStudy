@@ -1,0 +1,34 @@
+/ 2024.09.11
+// BOJ_15653_N과M9
+#include <bits/stdc++.h>
+using namespace std;
+int n, m, a[10], b[10];
+bool visited[10];
+void dfs(int num) {
+    if (num == m) {
+        for (int i = 0; i < m; i++)
+            cout << b[i] << ' ';
+        cout << '\n';
+        return;
+    }
+    int temp = 0;
+    for (int i = 0; i < n; i++) {
+        if (!visited[i] && temp != a[i]) {
+            b[num] = a[i];
+            temp = a[i];
+            visited[i] = true;
+            dfs(num + 1);
+            visited[i] = false;
+        }
+    }
+}
+
+int main() {
+	cin >> n >> m;
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+    sort(a, a + n);
+	dfs(0);
+    return 0;
+}

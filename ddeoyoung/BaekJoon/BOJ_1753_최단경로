@@ -1,0 +1,49 @@
+// 2024.09.13
+// BOJ_1753_최단경로
+#include <bits/stdc++.h>
+#define INF 1000000
+using namespace std;
+typedef pair<int, int> pp;
+int V, E, K, u, v, w, d[20001];
+vector<pp> e[300001];
+
+void go(int start) {
+	d[start] = 0;
+	priority_queue<pp> pq;
+	pq.push(make_pair(0, start));
+	while (!pq.empty()) {
+		int cur = pq.top().second; // v : 도착지
+		int dis = -pq.top().first; // w : 가중치
+		pq.pop();
+		if (d[cur] < dis) continue;
+		for (int i = 0; i < e[cur].size(); i++) {
+			int next = e[cur][i].second;
+			int nextd = dis + e[cur][i].first;
+			if (d[next] > nextd) {
+				d[next] = nextd;
+				pq.push(make_pair(-nextd, next));
+			}
+		}
+	}
+}
+
+int main() {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL); cout.tie(NULL);
+
+	cin >> V >> E >> K;
+	//memset(d, INF, sizeof(d));
+	for (int i = 1; i < V + 1; i++) d[i] = INF;
+	for (int i = 0; i < E; i++) { // 간선 저장
+		cin >> u >> v >> w;
+		e[u].push_back(make_pair(w, v));
+	}
+
+	go(K);
+	for (int i = 1; i < V + 1; i++) {
+		if (d[i] == INF) cout << "INF" << "\n";
+		else cout << d[i] << "\n";
+	}
+
+	return 0;
+}

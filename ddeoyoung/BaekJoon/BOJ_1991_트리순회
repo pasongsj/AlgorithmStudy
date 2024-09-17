@@ -1,0 +1,48 @@
+// 2024.09.17
+// BOJ_1991_트리순회
+#include <bits/stdc++.h>
+using namespace std;
+int n, x;
+void preorder(int _n, vector<vector<int>> &_v) {
+	if (_n == -1) return;
+	cout << (char)(_n + 'A');
+	preorder(_v[_n][0], _v);
+	preorder(_v[_n][1], _v);
+}
+
+void inorder(int _n, vector<vector<int>> &_v) {
+	if (_n == -1) return;
+	inorder(_v[_n][0], _v);
+	cout << (char)(_n + 'A');
+	inorder(_v[_n][1], _v);
+}
+
+void postorder(int _n, vector<vector<int>> &_v) {
+	if (_n == -1) return;
+	postorder(_v[_n][0], _v);
+	postorder(_v[_n][1], _v);
+	cout << (char)(_n + 'A');
+}
+
+int main() {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL); cout.tie(NULL);
+	cin >> n;
+	vector<vector<int>> v(n);
+	for (int i = 0; i < n; i++) {
+		char root, left, right;
+		cin >> root >> left >> right;
+		x = root - 'A';
+		if (left == '.') v[x].push_back(-1);
+		else v[x].push_back(left - 'A');
+		if (right == '.') v[x].push_back(-1);
+		else v[x].push_back(right - 'A');
+	}
+	preorder(0, v);
+	cout << "\n";
+	inorder(0, v);
+	cout << "\n";
+	postorder(0, v);
+	cout << "\n";
+	return 0;
+}

@@ -19,6 +19,8 @@
 | [알고리즘 4주차](https://github.com/pasongsj/AlgorithmStudy/milestone/4?state=closed) | 24.09.09 ~ 24.09.15 | 완료 | 100.00% |
 | [알고리즘 5주차](https://github.com/pasongsj/AlgorithmStudy/milestone/5?state=closed) | 24.09.16 ~ 24.09.22 | 진행 중 | 75.00% |
 | [알고리즘 6주차](https://github.com/pasongsj/AlgorithmStudy/milestone/6?state=closed) | 24.09.23 ~ 24.09.29 | 진행 중 | 40.00% |
+| [알고리즘 7주차](https://github.com/pasongsj/AlgorithmStudy/milestone/7?state=closed) | 24.10.07 ~ 24.10.13 | 완료 | 100.00% |
+| [알고리즘 8주차](https://github.com/pasongsj/AlgorithmStudy/milestone/8?state=closed) | 24.09.21 ~ 24.010.27 | 진행 중 | 50.00% |
   
 &nbsp;
 # :white_check_mark:문제 등록
